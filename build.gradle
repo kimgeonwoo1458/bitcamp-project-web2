@@ -1,0 +1,16 @@
+// 자바 사용 플러그인
+apply plugin: 'java'
+// 이클립스 사용 플러그인 추가
+apply plugin: 'eclipse'
+apply plugin: 'war'//웹 어플리케이션 배포관련 플러그인
+
+//sourceSets {}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+// 로컬에서 의존 라이브러리 가져오기
+    compile fileTree(dir:'libs', include: '*.jar')
+}
