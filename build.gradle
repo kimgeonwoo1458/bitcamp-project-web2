@@ -13,4 +13,5 @@ repositories {
 dependencies {
 // 로컬에서 의존 라이브러리 가져오기
     compile fileTree(dir:'libs', include: '*.jar')
+    providedCompile group: 'javax.servlet', name:'javax.servlet-api', version:'3.1.0'
 }
